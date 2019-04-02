@@ -1,0 +1,43 @@
+<section class="details">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <h4 class="card__header card-header">Подробная информация</h4>
+          <div class="card__body card-body">
+            <ul class="list list-group ">
+              <li class="list__item list-group-item list-group-item-action">
+                <p class="list__text1">Id</p>
+                <p class="list__text2">{{id}}</p>
+              </li>
+              <li class="list__item list-group-item list-group-item-action">
+                <p class="list__text1 card-text">First name</p>
+                <p class="list__text2 card-text">{{firstName}}</p>
+              </li>
+              <li class="list__item list-group-item list-group-item-action">
+                <p class="list__text1 card-text">Last name</p>
+                <p class="list__text2 card-text">{{lastName}}</p>
+              </li>
+              <li class="list__item list-group-item list-group-item-action">
+                <p class="list__text1  card-text">Email</p>
+                <p class="list__text2  card-text">{{email}}</p>
+              </li>
+              <li class="list__item list-group-item list-group-item-action">
+                <p class="list__text1 card-text">Company</p>
+                <p class="list__text2 card-text">{{company}}</p>
+              </li>
+              <li class="list__item list-group-item list-group-item-action">
+                <p class="list__text1 card-text">Phone</p>
+                <p class="list__text2 card-text">{{phone}}</p>
+              </li>
+              <li class="list__item list-group-item list-group-item-action">
+                <p class="list__text1 card-text">Foto</p>
+                <img class="list__img"  [src]="photoSrc" alt="photo person">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,35 @@
+.details{
+	margin-top:20px;
+	.container{
+		.card{
+			.card__header{
+				font-size: 17px;
+			}
+			.card__body{
+				.list{
+					border: 1px solid gray;
+					.list__item{
+						display: flex;
+						.list__text1{
+							min-width: 100px;
+							font-family: "Helvetica", sans-serif;
+							font-style: normal;
+							font-size: 15px;
+						}
+						.list__text2{
+							min-width: 300px;
+							font-family: "Helvetica", sans-serif;
+							font-style: normal;
+							font-size: 15px;
+						}
+
+						.list__img{
+							max-width: 200px;
+							max-height: 200px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

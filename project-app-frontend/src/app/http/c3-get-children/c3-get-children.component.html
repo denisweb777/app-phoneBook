@@ -1,0 +1,22 @@
+<div class="description">
+  <table class="table table-bordered table-hover ">
+    <thead class="table__head table-info">
+      <tr class="table__headTr">
+        <th class="table__headTh">First name</th>
+        <th class="table__headTh">Last name</th>
+        <th class="table__headTh">Email</th>
+        <th class="table__headTh">Company</th>
+        <th class="table__headTh">Photo</th>
+      </tr>
+    </thead>
+    <tbody class="table__body">
+      <tr class="table__bodyTr">
+        <td class="table__bodyTd">{{firstName}}</td>
+        <td class="table__bodyTd">{{lastName}}</td>
+        <td class="table__bodyTd">{{email}}</td>
+        <td class="table__bodyTd">{{company}}</td>
+        <td class="table__bodyTd"><img class="table__bodyTdImg" [src]="photoSrc" alt="photo person"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
