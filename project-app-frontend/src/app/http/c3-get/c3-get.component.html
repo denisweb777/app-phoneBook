@@ -1,0 +1,30 @@
+<section class="get">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+
+        <ul class="list list-group">
+          <li *ngFor="let person of persons"
+            class="list__item list-group-item list-group-item-action border border-primary">
+            <div class="list__text1"> <a href=""></a>First name: {{person.parameters.firstName}}</div>
+            <div class="list__text2"> Last name: {{person.parameters.lastName}}</div>
+
+            <!-- получение данных осуществляется в параметрах адрессной строки, используется children-routing -->
+            <a class="list__link1"
+              [routerLink]="['/http/get',person._id,person.parameters.firstName,person.parameters.lastName,person.email,person.company,person.phone,person.photo]">
+              <span class="list__badge badge badge-pill badge-primary">&#9660;</span>
+            </a>
+
+            <!-- получение данных осуществляется используя запрос к серверу -->
+            <a class="list__link2" [routerLink]="['/http/get',person._id]">подробно</a>
+          
+          </li>
+        </ul>
+
+        <router-outlet></router-outlet>
+        
+      </div>
+
+    </div>
+  </div>
+</section>
