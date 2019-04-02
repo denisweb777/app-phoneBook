@@ -2,5 +2,5 @@
 
 Запуск приложения в терминале:
 
-project-app-backend   => npm start
+project-app-backend   => npm start      
 project-app-frontend  =>  npm start
