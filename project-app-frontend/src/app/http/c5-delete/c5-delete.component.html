@@ -1,0 +1,68 @@
+<section class="delete">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+
+        <form class="delForm" [formGroup]="form" (ngSubmit)="onSubmit()">
+          <div class="delForm__group form-group">
+            <label class="delForm__label" for="textId">Поиск контакта:</label>
+            <div class="delForm__input-group input-group">
+              <input class="delForm__text form-control" type="text" id="textId" aria-describedby="textD"
+                placeholder="Введите имя" formControlName="firstName">
+              <input class="delForm__text form-control" type="text" id="textId" aria-describedby="textD"
+                placeholder="Введите фамилию" formControlName="lastName">
+              <div class="delForm__button-container input-group-prepend">
+                <button class="delForm__button btn btn-outline-secondary" type="submit"
+                  [disabled]="form.invalid">Найти</button>
+              </div>
+            </div>
+
+            <p class="delForm__validation" *ngIf="form.get('firstName').invalid && form.get('firstName').touched">
+              <span class="delForm__error form-text text-muted" id="textD"
+                *ngIf="form.get('firstName').errors['required']">Введите имя контакта!</span>
+              <span class="delForm__error form-text text-muted" id="textD"
+                *ngIf="form.get('firstName').errors['pattern']">Имя контакта может содержать только латинские
+                буквы!</span>
+            </p>
+            <p class="delForm__validation" *ngIf="form.get('lastName').invalid && form.get('lastName').touched">
+              <span class="delForm__error form-text text-muted" id="textD"
+                *ngIf="form.get('lastName').errors['required']">Введите фамилию контакта!</span>
+              <span class="delForm__error form-text text-muted" id="textD"
+                *ngIf="form.get('lastName').errors['pattern']">Фамилия контакта может содержать только латинские
+                буквы!</span>
+            </p>
+          </div>
+        </form>
+
+        <div class="response" *ngIf="response">
+
+          <ul class="list list-group">
+            <li class="list__item list-group-item list-group-item-action ">
+              <div class="list__text1">First name:</div>
+              <div class="list__text2">{{firstName}}</div>
+            </li>
+            <li class="list__item list-group-item list-group-item-action">
+              <div class="list__text1">Last name:</div>
+              <div class="list__text2">{{lastName}}</div>
+            </li>
+            <li class="list__item list-group-item list-group-item-action">
+              <div class="list__text1">Phone:</div>
+              <div class="list__text2">{{phone}}</div>
+            </li>
+          </ul>
+
+          <h5 class="delete__header">Удаление пользователя:</h5>
+          <button class="delete__button btn btn-outline-primary btn-block" (click)="deleteUser()" type="button">Удалить</button>
+
+          <div class="messageServer">
+            <p class="messageServer__text text-muted">{{message}}</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+

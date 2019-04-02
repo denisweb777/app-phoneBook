@@ -1,0 +1,74 @@
+.delete {
+  margin-top: 20px;
+  .container {
+    .delForm {
+      .delForm__group {
+        .delForm__label {
+          font-family: "Helvetica", sans-serif;
+          font-style: normal;
+          font-size: 16px;
+        }
+        .delForm__input-group {
+          .delForm__text {
+            font-family: "Helvetica", sans-serif;
+            font-style: normal;
+            font-size: 16px;
+          }
+          .delForm__button-container {
+            .delForm__button {
+              font-family: "Helvetica", sans-serif;
+              font-style: normal;
+              font-size: 15px;
+            }
+          }
+        }
+        .delForm__validation {
+          .delForm__error {
+            font-family: "Helvetica", sans-serif;
+            font-style: normal;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .response {
+      margin-top: 30px;
+      .list {
+        .list__item {
+          display: flex;
+          max-width: 300px;
+          .list__text1 {
+            min-width: 100px;
+            font-family: "Helvetica", sans-serif;
+            font-style: normal;
+            font-size: 15px;
+          }
+          .list__text2 {
+            min-width: 100px;
+            font-family: "Helvetica", sans-serif;
+            font-style: normal;
+            font-size: 15px;
+          }
+        }
+      }
+      .delete__header {
+				margin-top: 30px;
+        font-family: "Helvetica", sans-serif;
+        font-style: normal;
+        font-size: 16px;
+      }
+      .delete__button {
+				margin-top: 20px;
+      }
+      .messageServer {
+        .messageServer__text {
+          padding-top: 15px;
+          text-align: center;
+          font-family: "Helvetica", sans-serif;
+          font-style: normal;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

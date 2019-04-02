@@ -1,0 +1,35 @@
+.get {
+  .container {
+    .list {
+      margin-top: 20px;
+      .list__item {
+				display: flex;
+        .list__text1 {
+          padding-right: 20px;
+					min-width: 200px;
+          font-family: "Helvetica", sans-serif;
+          font-style: normal;
+          font-size: 15px;
+        }
+        .list__text2 {
+					min-width: 250px;
+          font-family: "Helvetica", sans-serif;
+          font-style: normal;
+          font-size: 15px;
+				}
+				.list__link1{
+          .list__badge{
+            text-align: center;
+          }
+        }
+        .list__link2{
+          margin-left: 10px;
+          font-family: "Helvetica", sans-serif;
+          font-style: normal;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
